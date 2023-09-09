@@ -1,7 +1,9 @@
 import prisma from "./lib/prisma"
 
+export const revalidate = 20;
 
 export default async function Home() {
+  
   const projects = await getProjects();
 
   return(
