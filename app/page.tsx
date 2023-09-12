@@ -1,4 +1,4 @@
-import { Josefin_Sans } from "next/font/google"
+import { Josefin_Sans, Inter } from "next/font/google"
 
 const josefin_sans_bold = Josefin_Sans({
   weight: '700',
@@ -6,6 +6,11 @@ const josefin_sans_bold = Josefin_Sans({
   subsets: ['latin']
 })
 
+const inter = Inter({
+  weight: '400',
+  style: 'normal',
+  subsets: ['latin']
+})
 export default async function Home() {
   
 
@@ -23,13 +28,22 @@ export default async function Home() {
           <div className="flex w-[40rem] h-[7rem]
           justify-center items-center shrink-0">
             <h1 className={`${josefin_sans_bold.className}
-             text-[3.5rem] leading-normal`}>
+             text-[3.5rem] leading-normal `}>
               Track All Your Projects From One Place.
+            </h1>
+          </div>
+
+          {/**Product pitch - description */}
+          <div className="flex w-[31.75rem] h-[3.625rem]
+           justify-center align-center shrink-0 mt-4">
+            <h1 className={`${inter.className}
+             text-2xl leading-normal`}>
+            Get your most important work done quickly. No hustle, no backups. 
             </h1>
           </div>
         </div>
       </div>
-        
+
     </div>
     
   )
