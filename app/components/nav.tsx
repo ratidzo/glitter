@@ -13,9 +13,16 @@ const inria_sans = Inria_Sans({
     subsets: ['latin']
 })
 
+const inria_sans_bold = Inria_Sans({
+    weight: '700',
+    style: 'normal',
+    subsets: ['latin']
+})
+
+
 function Nav() {
     return(
-        <div className="flex w-[81rem] h-[3rem] mx-[4.5rem]
+        <div className="flex h-[3rem] mx-[4.5rem]
          mt-6 justify-between items-center shrink-0">
 
             {/**Company logo. */}
@@ -47,8 +54,32 @@ function Nav() {
                 </Link>
             </div>
 
+            {/**Login - Signup buttons. */}
+            <div className='flex w-[12.375rem] h-[2.875rem]
+            items-center gap-10 shrink-0'>
+
+                {/**Log in button */}
+                <Link href={'#'}>
+                    <h1 className={`${inria_sans_bold.className}
+                    text-[1.125rem] leading-normal`}>
+                        Log in
+                    </h1>
+                </Link>
+                
+                {/**Sign up */}
+                <div className='flex w-[6.875rem] h-[2.875rem]
+                px-[1.625rem] py-[0.6875rem] justify-center
+                items-center shrink-0 rounded-3xl bg-black'>
+                    <Link href={'#'}>
+                        <h1 className={`shrink-0 ${inria_sans.className} text-[1.125rem] leading-normal text-white`}>
+                        Sign up
+                        </h1>
+                    </Link>
+                </div>
+            </div>
         </div>
     )
 }
 
 export {Nav};
+
