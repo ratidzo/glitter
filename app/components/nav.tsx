@@ -22,7 +22,7 @@ const inria_sans_bold = Inria_Sans({
 
 function Nav() {
     return(
-        <div className="flex h-[3rem] mx-[4.5rem]
+        <div className="flex h-[3rem]
          mt-6 justify-between items-center shrink-0">
 
             {/**Company logo. */}

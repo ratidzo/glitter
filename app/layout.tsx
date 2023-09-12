@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className='mx-[4.5rem]'>
         <Nav/>
         {children}
       </body>
