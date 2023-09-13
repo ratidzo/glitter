@@ -7,6 +7,12 @@ const josefin_sans_bold = Josefin_Sans({
   subsets: ['latin']
 })
 
+const josefin_sans_medium = Josefin_Sans({
+  weight: '500',
+  style: 'normal',
+  subsets: ['latin']
+})
+
 const inter = Inter({
   weight: '400',
   style: 'normal',
@@ -17,7 +23,8 @@ export default async function Home() {
 
   return(
 
-    <div className="flex flex-col items-start gap-[7.5625rem] ">
+    <div className="flex flex-col items-start gap-[7.5625rem]
+     mb-[1.62rem]">
       {/**Main page body.*/}
       <div className="flex h-[26.25rem]
     items-center mt-[10.5rem] justify-between">
@@ -255,15 +262,35 @@ export default async function Home() {
         </div>
       </div>
       {/** Bottom divider*/}
-      <div className="flex place-items-center w-[81rem]">
+      <div className="flex items-center justify-center
+        max-w-full ">
         <svg width="1296" height="1" viewBox="0 0 1296 1" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line y1="0.5" x2="1296" y2="0.5" stroke="black"/>
         </svg>
       </div>
       
       {/**Footer */}
-      <div>
-        
+      <div className="flex flex-col w-[4.0625rem] h-24 justify-between items-start
+      ">
+        <Link href={'#'}>
+          <h1 className={`${josefin_sans_medium.className}
+          text-[.875rem] leading-normal`}>
+            FAQs
+          </h1>
+        </Link>
+        <Link href={'#'}>
+          <h1 className={`${josefin_sans_medium.className}
+          text-[.875rem] leading-normal`}>
+            Contanct
+          </h1>
+        </Link>
+        <Link href={'#'}>
+          <h1 className={`${josefin_sans_medium.className}
+          text-[.875rem] leading-normal`}>
+            Products
+          </h1>
+        </Link>
+
       </div>
     </div>
     
