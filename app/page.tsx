@@ -261,13 +261,7 @@ export default async function Home() {
 
         </div>
       </div>
-      {/** Bottom divider*/}
-      <div className="flex items-center justify-center
-        max-w-full ">
-        <svg width="1296" height="1" viewBox="0 0 1296 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line y1="0.5" x2="1296" y2="0.5" stroke="black"/>
-        </svg>
-      </div>
+     
       
       {/**Footer */}
       <div className="flex flex-col w-[4.0625rem] h-24 justify-between items-start
