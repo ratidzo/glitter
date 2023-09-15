@@ -1,4 +1,5 @@
 import { Inria_Sans } from "next/font/google";
+import Link from "next/link";
 
 const inria_sans_bold = Inria_Sans({
     weight: '700',
@@ -62,6 +63,27 @@ function Login() {
                     className="w-[18.0625rem] h-[3rem] shrink-0
                     ring-2 ring-black rounded-lg px-4"/>
 
+                    {/**Recovery & Signup Links */}
+
+                    <div className="flex w-[19.3125rem] p-[0.625rem]
+                    justify-between items-center ">
+                        <div className="flex items-start gap-[4.8125rem]
+                        ">
+                            <Link href={'#'}>
+                                <h1 className={`${inria_sans_bold.className}
+                                text-[1rem] leading-normal`}>
+                                    Forgot your password?
+                                </h1>
+                            </Link>
+                            <Link href={'#'}>
+                                <h1 className={`${inria_sans_bold.className}
+                                text-[1rem] leading-normal`}>
+                                    Sign up
+                                </h1>
+                            </Link>
+
+                        </div>
+                    </div>
 
                 </div>
 
