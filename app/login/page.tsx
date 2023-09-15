@@ -35,7 +35,7 @@ function Login() {
                 {/**Email Section */}
                 <div className="flex h-[4.9375rem] flex-col
                 items-start gap-2 shrink-0 ">
-                    {/** */}
+                    {/** Email label*/}
                     <label htmlFor="email" className={`
                     ${inria_sans_bold.className} text-[1rem]
                     leading-normal`}>
@@ -48,7 +48,20 @@ function Login() {
                 </div>
 
                 {/**Password Section */}
-                <div>
+                <div className="flex flex-col h-[4.5rem]
+                  items-start gap-2 shrink-0">
+
+                    {/** Password label*/}
+                    <label htmlFor="password" className={`
+                    ${inria_sans_bold.className} text-[1rem]
+                    leading-normal`}>
+                        Password
+                    </label>
+                    {/**Password input */}
+                    <input name="password" type="password"
+                    className="w-[18.0625rem] h-[3rem] shrink-0
+                    ring-2 ring-black rounded-lg"/>
+
 
                 </div>
 
