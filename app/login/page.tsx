@@ -85,6 +85,18 @@ function Login() {
                         </div>
                     </div>
 
+                    {/**Login Button */}
+                    <input type="submit" className={`
+                    ${inria_sans_bold.className } bg-black
+                     text-white flex hover:cursor-pointer
+                     hover:shadow-lg hover:shadow-indigo-200
+                    w-[18.0625rem] py-[0.5625rem] px-[7.0625rem]
+                    justify-between items-center rounded-lg
+                    border-2 border-black`} name="submit"
+                    value="Log in"/>
+
+                    {/**Options Visual Divider */}
+                    
                 </div>
 
                 
