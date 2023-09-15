@@ -44,7 +44,7 @@ function Login() {
                     {/**Email input */}
                     <input name="email" type="text"
                     className="w-[18.0625rem] h-[3rem] shrink-0
-                    ring-2 ring-black rounded-lg"/>
+                    ring-2 ring-black rounded-lg px-4"/>
                 </div>
 
                 {/**Password Section */}
@@ -60,7 +60,7 @@ function Login() {
                     {/**Password input */}
                     <input name="password" type="password"
                     className="w-[18.0625rem] h-[3rem] shrink-0
-                    ring-2 ring-black rounded-lg"/>
+                    ring-2 ring-black rounded-lg px-4"/>
 
 
                 </div>
