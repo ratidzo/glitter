@@ -59,7 +59,7 @@ function Nav() {
             items-center gap-10 shrink-0'>
 
                 {/**Log in button */}
-                <Link href={'#'}>
+                <Link href={'/login'}>
                     <h1 className={`${inria_sans_bold.className}
                     text-[1.125rem] leading-normal`}>
                         Log in
