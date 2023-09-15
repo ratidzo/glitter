@@ -31,7 +31,6 @@ function Login() {
                             Log in to TaskGlitter
                         </h1>
                 </div>
-
                 
                 {/**Email Section */}
                 <div className="flex h-[4.9375rem] flex-col
@@ -45,10 +44,13 @@ function Login() {
                     {/**Email input */}
                     <input name="email" type="text"
                     className="w-[18.0625rem] h-[3rem] shrink-0
-                    ring-2 ring-black rounded "/>
+                    ring-2 ring-black rounded-lg"/>
                 </div>
 
+                {/**Password Section */}
+                <div>
 
+                </div>
 
                 
             </form>
