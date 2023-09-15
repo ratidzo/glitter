@@ -96,7 +96,24 @@ function Login() {
                     value="Log in"/>
 
                     {/**Options Visual Divider */}
-                    
+                    <div className="flex w-[18.0625rem]
+                    justify-between items-center ">
+                        {/**Left half-line */}
+                        <svg width="125" height="2" viewBox="0 0 125 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0.151123" y1="1.14288" x2="124.151" y2="1.14288" stroke="black"/>
+                        </svg>
+                            {/**Centre text */}
+                        <h1 className={`${inria_sans_bold.className}
+                           text-[1rem] leading-normal
+                        `}>
+                            Or
+                        </h1>
+                            {/**Right half-line */}
+                        <svg width="125" height="2" viewBox="0 0 125 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0.151123" y1="1.14288" x2="124.151" y2="1.14288" stroke="black"/>
+                        </svg>
+                    </div>
+                
                 </div>
 
                 
