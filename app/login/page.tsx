@@ -1,3 +1,12 @@
+import { Inria_Sans } from "next/font/google";
+
+const inria_sans_bold = Inria_Sans({
+    weight: '700',
+    style: 'normal',
+    subsets: ['latin']
+})
+
+
 function Login() {
     return(
         <div className="flex w-[68.91569rem] justify-between
@@ -15,8 +24,18 @@ function Login() {
             shrink-0 ">
 
                 {/**Login to TaskGlitter */}
-                <div >
+                <div className="flex justify-center items-center
+                gap-[0.625rem] mb-8 ">
+                    <h1>
+                        Log in to TaskGlitter
 
+                        color: #000;
+font-family: Inria Sans;
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+                    </h1>
                 </div>
             </div>
 
