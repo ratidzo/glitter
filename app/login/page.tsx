@@ -115,15 +115,15 @@ function Login() {
 
                 {/**Login to TaskGlitter */}
                 <div className="flex justify-center items-center
-                     gap-[0.625rem]">
+                     ">
                         <h1 className={`${inria_sans_bold.className}
-                            text-[2rem] leading-normal flex`}>
+                             text-[2rem] `}>
                             Log in to TaskGlitter
                         </h1>
                 </div>
                 
                 {/**Email Section */}
-                <div className="flex h-[4.9375rem] flex-col
+                <div className="flex h-[4.5rem] flex-col
                 items-start gap-2 shrink-0 ">
                     {/** Email label*/}
                     <label htmlFor="email" className={`
@@ -132,7 +132,7 @@ function Login() {
                         Email
                     </label>
                     {/**Email input */}
-                    <input name="email" type="text"
+                    <input name="email" type="email"
                     className="w-[18.0625rem] h-[3rem] shrink-0
                     ring-2 ring-black rounded-lg px-4"/>
                 </div>
@@ -151,10 +151,11 @@ function Login() {
                     <input name="password" type="password"
                     className="w-[18.0625rem] h-[3rem] shrink-0
                     ring-2 ring-black rounded-lg px-4"/>
+                </div>
 
-                    {/**Recovery & Signup Links */}
+                {/**Recovery & Signup Links */}
 
-                    <div className="flex w-[19.3125rem] p-[0.625rem]
+                <div className="flex w-[19.3125rem] p-[0.625rem]
                     justify-between items-center ">
                         <div className="flex items-start gap-[4.8125rem]
                         ">
@@ -172,10 +173,10 @@ function Login() {
                             </Link>
 
                         </div>
-                    </div>
+                </div>
 
-                    {/**Login Button */}
-                    <input type="submit" className={`
+                {/**Login Button */}
+                <input type="submit" className={`
                     ${inria_sans_bold.className } bg-black
                      text-white flex hover:cursor-pointer
                      hover:shadow-lg hover:shadow-indigo-200
@@ -184,8 +185,8 @@ function Login() {
                     border-2 border-black`} name="submit"
                     value="Log in"/>
 
-                    {/**Options Visual Divider */}
-                    <div className="flex w-[18.0625rem]
+                {/**Options Visual Divider */}
+                <div className="flex w-[18.0625rem]
                     justify-between items-center ">
                         {/**Left half-line */}
                         <svg width="125" height="2" viewBox="0 0 125 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,10 +202,10 @@ function Login() {
                         <svg width="125" height="2" viewBox="0 0 125 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="0.151123" y1="1.14288" x2="124.151" y2="1.14288" stroke="black"/>
                         </svg>
-                    </div>
+                </div>
                 
-                    {/**Login with GitHub */}
-                    <Link href={'#'}>
+                {/**Login with GitHub */}
+                <Link href={'#'}>
                         <div className="flex w-[18.0625rem] h-12 shrink-0
                         justify-between items-center
                         border-2 border-black rounded-lg bg-black
@@ -232,13 +233,8 @@ function Login() {
                             Continue with GitHub
                         </h1>
                         </div>
-                    </Link>
-                </div>
-
-                
+                </Link>
             </form>
-
-
         </div>
     )
 }
